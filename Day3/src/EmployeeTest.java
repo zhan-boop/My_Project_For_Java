@@ -1,6 +1,6 @@
 import java.time.*;
 /*定义Employee类*/
-public class Employee {
+class Employee {
     /*定义三个私有变量，若想获取，得有三个get公有方法进行获取*/
     private String name;
     private double salary;
@@ -30,7 +30,7 @@ public class EmployeeTest{
         staff[2]=new Employee("Tony Tester",40000,1990,3,15);
         /*遍历数组，设置每个人的增长值为5%*/
         for(Employee e:staff){
-            e.raiseSalary(5);
+            e.raiseSalary(10);
         }
         /*使用增强for循环，循环遍历staff数组*/
         for(Employee e:staff){
